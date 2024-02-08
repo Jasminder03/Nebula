@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.student{
+    width: 60%;
+    height: 90vh;
+    margin-left:13rem;
+}
+
+.content{
+    margin: 5rem 0 0 10rem;
+}
+
+.black_bt{
+    @apply bg-black text-white px-7 py-3 rounded-xl text-3xl hover:bg-white hover:text-black transition-all hover:border hover:border-black
+}
+
+
+
+@media screen and (max-width:450px){
+    .student{
+        margin-left: -1rem;
+        width:100%;
+        margin-top: 2rem
+    }
+    .content{
+        margin-left:0;
+        margin-top: 8rem;
+
+    }
+
+    .img{
+        position:absolute;
+        margin-left:-3rem;
+    }
+    .li{
+        margin-top:0
+    }
+}
+
+@media screen and (max-width:650px){
+    .student{
+        margin-left: -1rem;
+        width:100%;
+        margin-top: 2rem
+    }
+    .content{
+        margin-left:0;
+        margin-top: 9rem;
+
+    }
+
+    .img{
+        position:absolute;
+        margin-left:-3.8rem;
+        width: 65px;
+        height: 65px;
+    }
+    .li{
+        margin-top:0
+    }
+}
